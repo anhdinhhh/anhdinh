@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/font/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+   <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Contact us</a></li>
+                <div class="order">
+                    <a href="" class="order-online">Order online</a>
+                </div>
+                <!-- <div class="logo">
+                    <img src="assets/css/img/logo.png" width="120px" height="50px" > 
+                </div> -->
+
+            </ul>   
+        </div>
+
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">Sweetie Doughnut</h2>
+                <div class="text-description">The Best Donuts in Town</div>
+            </div>
+
+        </div>
+    <!--About section-->
+        <div id="content">
+            <div class="content-section">
+                <h2 class="section-heading">Our Story</h2>
+                <div class="container-swap">
+                    <div class="about-text">
+                        <p><strong>Sweetie Doughnut</strong> opened the first franchise in 2020. Our shop had a goal to <em>"make and serve the freshest, most delicious donuts quickly and courteously in modern, well-merchandised stores".</em> </p> <br>
+                        <p>The objective is to ingrain in young people that <strong>Sweetie Doughnut</strong>  should be the first breakfast that comes to mind as soon as they wake up</p><br>
+                        <p>Furthermore, <strong>Sweetie Doughnut</strong>  provides everyday service for baked goods which are freshly made each morning and on order. The franchise has a variety of donuts, from classic to holiday flavors, they have it all.</p>
+                    </div>
+                    
+                    <div class="intro">
+                        <img src="./assets/css/img/klim-musalimov-buUMfn8oSzQ-unsplash.jpg" alt="Donut shop" class="shop-img">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    <!--Top flavors section-->
+        <div class="flavor-section">
+            <div id="content">
+                <div class="content-section">
+                    <h2 class="section-heading">Our Top Flavors</h2>
+                    
+                </div>
+            </div>
+        </div>
+    <!--donuts list-->
+        <div class="row donut-list">
+            <div class="col donut-item">
+                <img src="./assets/css/img/m_donut_1.jpg" alt="Chocolate Crunch" class="donut-img">
+                <div class="list-body">
+                    <h3 class="list-heading">Chocolate Crunch</h3>
+                    <button class="btn buy-now js-buy-now">Order now</button>
+                </div>
+            </div>
+            <div class="col donut-item">
+                <img src="./assets/css/img/m_donut2.png" alt="Cookies & Cream" class="donut-img">
+                <div class="list-body">
+                    <h3 class="list-heading">Cookies & Cream</h3>
+                    <button class="btn buy-now js-buy-now">Order now</button>
+                </div>
+            </div>
+            <div class="col donut-item">
+                <img src="./assets/css/img/m_donut3.jpg" alt="Caramel Glaze" class="donut-img">
+                <div class="list-body">
+                    <h3 class="list-heading">Caramel Glaze</h3>
+                    <button class="btn buy-now js-buy-now">Order now</button>
+                </div>
+            </div>
+            <div class="col donut-item">
+                <img src="./assets/css/img/m_donut4.jpg" alt="Strawberry Sprinkles" class="donut-img">
+                <div class="list-body">
+                    <h3 class="list-heading">Strawberry Sprinkles</h3>
+                    <button class="btn buy-now js-buy-now">Order now</button>
+                </div>
+            </div>
+        </div>
+    <!--   Modal   -->
+        <div class="modal">
+        <!-- Chocolate -->
+            <div class="modal-open js-modal-open">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ti-close"></i>
+                </div>
+                <div class="modal-img">
+                  <img src="./assets/css/img/m_Presentation1.jpg" class="img-donut" alt="Chocolate Crunch">
+                </div>
+                <div class="modal-body">
+                    <h2 class="modal-name">Chocolate Crunch</h2>
+                    <p class="modal-des">The chocolate donut is covered with bittersweet chocolate and topped with colorful nuggets to make the product extremely sweet and attractive.</p>
+                        <div class="modal-request">
+                            <form>
+                                <label for="request"><strong>Special requests</strong></label><br>
+                                <input type="text" name="request" id="request" placeholder="Add them hear. We'll do our best to make it happen.">
+                            </form>
+                        </div>
+                    <div class="price"><strong>Price:</strong> $2.50</div>
+                <div class="modal-footer">
+                        <input type="number" class="count" min="1" value="1" id="">
+                        <button class="add">Add to cart</button>
+                        <button class="remove"><i class="ti-trash"></i> </button>
+                </div>
+                </div>  
+            </div>             
+            </div>
+        <!-- Cookie cream -->
+        <div class="modal-open js-modal-open">
+          <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ti-close"></i>
+                </div>
+                <div class="modal-img">
+                    <img src="./assets/css/img/m_Presentation2.jpg" class="img-donut" alt="Cookies & Cream">
+
+                </div>
+                <div class="modal-body">
+                    <h2 class="modal-name">Cookies & Cream</h2>
+                    <p class="modal-des">Cookies and Cream Chocolate Doughnuts have a baked chocolate fudge doughnut, an ultra-thick sweet icing, and a generous sprinkling of crushed Oreos.</p>
+                        <div class="modal-request">
+                            <form>
+                                <label for="request"><strong>Special requests</strong></label>
+                                <input type="text" name="request" id="request" placeholder="Add them hear. We'll do our best to make it happen.">
+                            </form>
+                        </div>
+                    <div class="price"><strong>Price:</strong>$2.50</div>
+                 <div class="modal-footer">
+                    <input type="number" class="count" min="1" value="1" id="">
+                    <button class="add">Add to cart</button>
+                    <button class="remove"><i class="ti-trash"></i> </button>
+                 </div>
+                </div> 
+            </div>              
+            </div>
+        <!-- Caramel -->
+        <div class="modal-open js-modal-open">
+          <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ti-close"></i>
+                </div>
+                <div class="modal-img">
+                    <img src="./assets/css/img/m_Presentation3.jpg" class="img-donut" alt="Caramel Glaze">
+
+                </div>
+                <div class="modal-body">
+                    <h2 class="modal-name">Caramel Glaze</h2>
+                    <p class="modal-des">These aromatic baked Golden Donuts are spiced with turmeric, cardamom and ginger and bathed in a decadent caramel sauce ~ making them one heck of a tasty breakfast!</p>
+                        <div class="modal-request">
+                            <form>
+                                <label for="request"><strong>Special requests</strong></label>
+                                <input type="text" name="request" id="request" placeholder="Add them hear. We'll do our best to make it happen.">
+                            </form>
+                        </div>
+                    <div class="price"><strong>Price:</strong>$2.50</div>
+                 <div class="modal-footer">
+                    <input type="number" class="count" min="1" value= "1" id="">
+                    <button class="add">Add to cart</button>
+                    <button class="remove"><i class="ti-trash"></i> </button>
+                 </div>
+                </div>    
+            </div>           
+            </div> 
+        <!-- Strawberry -->
+            <div class="modal-open js-modal-open"> 
+            <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal-img">
+                <img src="./assets/css/img/m_Presentation4.jpg" class="img-donut" alt="Strawberry Sprinkles">
+
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-name">Strawberry Sprinkles</h2>
+                <p class="modal-des">A large Yeast raised doughnut, covered in house-made strawberry icing, and colorful sprinkles.</p>
+                    <div class="modal-request">
+                        <form>
+                            <label for="request"><strong>Special requests</strong></label>
+                            <input type="text" name="request" id="request" placeholder="Add them hear. We'll do our best to make it happen.">
+                        </form>
+                    </div>
+                <div class="price"><strong>Price:</strong>$2.50</div>
+             <div class="modal-footer">
+                <input type="number" class="count" min="1" value="1" id="">
+                <button class="add">Add to cart</button>
+                <button class="remove"><i class="ti-trash"></i> </button>
+             </div>
+            </div>  
+        </div>             
+     
+ 
+        </div>
+         <!--contact section-->
+         <div id="content">
+            <div class="content-section">
+                <h2 class="section-heading">Contact us</h2>
+                
+                <div class="row contact-content">
+                    <div class="col col-three">
+                        <h4 class="address">Address</h4>
+                        <p><i class="ti-location-pin"></i>Nguyen Trai, Thanh Xuan, Hanoi</p>
+                        <h4 class="follow">Follow us</h4>
+                        <p><i class="ti-instagram"></i>Instagram</p>
+                        <p><i class="ti-facebook"></i>Facebook</p>
+                        <p><i class="ti-youtube"></i>Youtube</p>
+                    </div>
+                    <div class="col col-three">
+                        <h4 class="open">Opening hours</h4>
+                        <p><i class="ti-time"></i>Mon-Thu: 10am - 9pm</p>
+                        <p><i class="ti-time"></i>Fri-Sun: 10am - 11pm</p>
+                        <h4 class="contact">Contact </h4>
+                        <p><i class="ti-email"></i>anhdinhtq7204@gmail.com</p>
+                        <p><i class="ti-mobile"></i>0335979819</p>
+                    </div>
+                    <div class="col col-three">
+                        <h3 class="mail">Subscribe to our newsletter for some sweet stuff </h3>
+                        <label for="email">Enter your email:</label>
+                        <input type="email" id="email" name="email">
+                        <input type="submit" value="Subscribe"> 
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            
+        </div>
+        <!-- <div class="cart">
+            <div class="name">CART</div>
+            <div class="listCart">
+                
+            </div>
+        </div> -->
+   </div>
+   <script>
+        const buyBtns = document.querySelectorAll('.js-buy-now')
+        const modalOpen = document.querySelector('.js-modal-open')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+        
+        // Hàm hiển thị modal mua hàng (thêm class open vào modal)
+        function showBuyNow() {
+            modalOpen.classList.add('open')
+        }
+
+        // Hàm ẩn modal mua hàng (gỡ bỏ class open vào modal)
+        function hideBuyNow() {
+            modalOpen.classList.remove('open')
+        }
+
+        // Lặp qua từng thẻ button và nghe hành vi click
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click',showBuyNow)
+        }
+        // Nghe hành vi click vào button close
+        modalClose.addEventListener('click', hideBuyNow)
+
+        modalOpen.addEventListener('click', hideBuyNow)
+
+        modalContainer.addEventListener('click', function (event){
+            event.stopPropagation()
+        })
+
+    </script>
+    <!-- <script src="./script.js"></script> -->
+</body>
+</html>

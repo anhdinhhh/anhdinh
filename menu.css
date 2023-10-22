@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: font-heading;
+    src: url("./font/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+:root{
+    --white: #fff;
+    --black: #000;
+    --orange:#f5c9b2;
+    --blue:#5D478B;
+    --purple: #5D4783;
+    --brown:#765223;
+}
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+/* .col{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+} */
+.col-three{
+    width: 33.3%;
+    
+}
+body{
+
+    background-color: var(--white);
+    font-family: font-heading;
+}
+
+.heading{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bolder;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+.sub-heading{
+    text-align: center;
+    font-size: 2vw;
+}
+#menu{
+    overflow: hidden;
+}
+.container{
+    max-width: 100%;
+    width: 1200px;
+    border: 1px solid var(--purple);
+    min-height: 80vh;
+    margin: 100px auto 0;
+    padding: 20px;
+    border-radius: 30px;
+    /* display: flex;
+    grid-template-columns: auto; */
+    
+}
+.menu1{
+    display: flex;
+    flex-direction: row;
+    flex: 25%;
+
+}
+.menu2{
+    display: flex;
+    flex: 25%;
+
+}
+.container .donut-menu{
+    margin: 10px 0;
+    padding: 0 20px 20px;
+    max-width: 100%;
+    /* display: flex;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px; */
+}
+.container .donut-item{
+    width: 25%;
+    max-width: 100%;
+    line-height: 20px;
+    justify-content: center;
+    /* display: grid;
+    grid-template-rows: 40% 35% 10%; */
+    padding: 5px;
+    /* margin: 0 5px; */
+    row-gap: 30px;
+
+
+}
+.donut-item .donut-img{
+    max-width: 100%;
+    width: 200px;
+    max-height: 100%;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+    /* padding: 5px; */
+}
+.donut-item .list-body{
+    max-width: 100%;
+    width:220px;
+    padding: 2px;
+
+}
+.list-heading{
+    font-weight: 900;
+    font-size: 1.25vw;
+    width: 280px;
+    max-width: 100%;
+    text-align: center;
+}
+hr {
+    margin-top: 10px;
+}
+.list-des{
+    margin-top: 10px;
+    font-size: 1vw;
+    text-align: center;
+}
+.donut-item .price{
+    /* display: flex;
+    flex-direction: row; */
+    margin-top: 30px;
+    max-width: 100%;
+    width: 200px;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+
+#footer{
+    margin-top: 50px;
+}
+/* Tablet */
+@media(min-width: 740px) and (max-width: 1024px){
+    .donut-item{
+        flex: 100%;
+    }
+
+}

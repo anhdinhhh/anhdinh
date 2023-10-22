@@ -1,0 +1,92 @@
+/* Tablet */
+@media(min-width: 740px) and (max-width: 1024px){
+    
+    .main{
+        overflow: hidden;
+    }
+    .header{
+        max-width: 100%;
+        width: max-content;
+        overflow: hidden;
+    }
+    .logo {
+        margin-left: -100px;
+        width: 20px;
+    }
+    .home{
+        margin-left: 0;
+    }
+    .header .navbar{
+        display: none;
+    }
+    .order-btn .order-online{
+        display: none;
+    }
+    .header .ti-menu{
+        display: block;
+    }
+   
+    .text-content h2{
+        font-size: 110%;
+    }
+    .text-description h4{
+        font-size: 60%;
+        margin-top: -15px;
+    }
+    .container-swap{
+        max-width: 100%;
+    }
+    .section-heading{
+        font-size: 100%;
+    }
+    .content-section .about-text{
+        font-size: 100px;
+    }
+    /* div.about-text{
+        font-size: 200px;
+    } */
+    .content-section .intro{
+        padding-right: 40px;
+    }
+    .content-section .shop-img{
+        max-width: 100%;
+        max-height: fit-content;
+    }
+    .donut-item .list-heading{
+        font-size: 75%;
+        /* font-size: 10px; */
+    }
+   
+    .donut-item .buy-now{
+        max-width: 100%;
+    }
+    .col-three{
+        max-width: 100%;
+        padding: 0;
+        /* padding-right: 10px; */
+        /* margin-left: -100%; */
+    }
+    .footer-content{
+        max-width: 100%;
+        /* margin-left: -130px;
+        margin-top: -30px; */
+    }
+
+    .footer-section{
+        max-width: 100%;
+        /* margin-left: -180px; */
+    }
+    div.footer-section{
+        font-size: 13px;
+    }
+    .col-three .subscribe{
+        max-width: 100%;
+
+    }
+}
+/* Mobile */
+@media(max-width: 46.25em){
+    .mobile{
+        display: block;
+    }
+}

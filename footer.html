@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth;
+    }
+    #main{
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+    :root{
+        --white: #fff;
+        --black: #000;
+        --orange:#f5c9b2;
+        --blue:#5D478B;
+        --purple: #5D4783;
+        --brown:#765223;
+    }
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .col{
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .col-three{
+        width: 33.3%;
+    
+    }
+
+    @font-face {
+        font-family: font-section;
+        src: url("./assets/css/font/Quicksand/Quicksand-VariableFont_wght.ttf");
+    }
+    /* Tablet */
+@media(min-width: 740px) and (max-width: 1024px){
+    
+    .main{
+        overflow: hidden;
+    }
+    .header{
+        max-width: 100%;
+        width: max-content;
+        overflow: hidden;
+    }
+    .logo {
+        margin-left: -100px;
+        width: 20px;
+    }
+    .home{
+        margin-left: 0;
+    }
+    .header .navbar{
+        display: none;
+    }
+    .order-btn .order-online{
+        display: none;
+    }
+    .header .ti-menu{
+        display: block;
+    }
+   
+    .text-content h2{
+        font-size: 110%;
+    }
+    .text-description h4{
+        font-size: 60%;
+        margin-top: -15px;
+    }
+    .container-swap{
+        max-width: 100%;
+    }
+    .section-heading{
+        font-size: 100%;
+    }
+    .content-section .about-text{
+        font-size: 100px;
+    }
+    /* div.about-text{
+        font-size: 200px;
+    } */
+    .content-section .intro{
+        padding-right: 40px;
+    }
+    .content-section .shop-img{
+        max-width: 100%;
+        max-height: fit-content;
+    }
+    .donut-item .list-heading{
+        font-size: 75%;
+        /* font-size: 10px; */
+    }
+   
+    .donut-item .buy-now{
+        max-width: 100%;
+    }
+    .col-three{
+        max-width: 100%;
+        padding: 0;
+        /* padding-right: 10px; */
+        /* margin-left: -100%; */
+    }
+    .footer-content{
+        max-width: 100%;
+        /* margin-left: -130px;
+        margin-top: -30px; */
+    }
+
+    .footer-section{
+        max-width: 100%;
+        /* margin-left: -180px; */
+    }
+    div.footer-section{
+        font-size: 13px;
+    }
+    .col-three .subscribe{
+        max-width: 100%;
+
+    }
+}
+/* Mobile */
+@media(max-width: 46.25em){
+    .mobile{
+        display: block;
+    }
+}
+/* Footer */
+
+.footer-content{
+    /* margin-top: 48px; */
+    display: flex;
+    align-items: center;
+}
+.footer-content > div {
+    padding: 20px 70px;
+}
+.col-three{
+    width: 33.3%;
+    max-width: 100%;
+    text-align:left;
+    align-items: center;
+    display: inline-block;
+}
+/*    footer-section   */ 
+hr{
+    width: 100%;
+    color: var(--purple);
+    size: 1px;
+}
+#footer {
+    max-height: 100%;
+    height: 280px;
+    background-image:linear-gradient(0, #e9bca4, #edd1be, #f5f0ec);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+.footer-content i[class*="ti-"]{
+    width: 25px;
+    display: inline-block;
+
+}
+
+.footer-section {
+    max-width: 100%;
+    margin-top: 1.5vw;
+    /* padding-right: 5px; */
+    /* margin-left: 180px; */
+    /* margin-right: auto; */
+    line-height: 1.6;
+    font-family: font-section;
+    font-size: 1.2vw;
+    justify-content: center;
+}
+#footer a{
+    color: var(--black);
+    text-decoration: none;
+}
+.follow{
+    margin-top: 10px;
+}
+.contact{
+    margin-top: 10px;
+}
+.mail{
+    /* width: 300px; */
+}
+#email{
+    max-width: 100%;
+    width: 280px;
+    height: 25px;
+}
+.subscribe .submit{
+    max-width: 100%;
+    /* width: 20vw; */
+    padding: 0.5vw 6.5vw;
+    color: var(--white);
+    font-size: 1.2vw;
+    background-color: var(--purple);
+    text-decoration: none;
+    border-style: none;
+    font-family: font-section;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 40px;
+}
+.submit:hover {
+    color: var(--blue);
+    background-color: #ccc;
+}
+    </style>
+</head>
+<body>
+    <div id="footer">
+        <hr>              
+        <div class="footer-section">  
+            <div class="row footer-content">
+                <div class=" col-three">
+                    <h4 class="address">Address</h4>
+                    <i class="ti-location-pin"></i>
+                    <a  href="https://maps.app.goo.gl/uEJfyBFRn7avKK2YA" target="_blank" class="address2">Nguyen Trai, Thanh Xuan, Hanoi</a>
+                    <h4 class="follow">Follow us</h4>
+                    <ul class="follow-list">
+                        <i class="ti-instagram"></i><a  href="https://www.instagram.com/hnida.07/" target="_blank" class="instagram">Instagram</a> <br>                       
+                        <i class="ti-facebook"></i><a  href="https://www.facebook.com/LTAD.7204/" target="_blank" class="facebook">Facebook</a><br>                     
+                        <i class="ti-youtube"></i><a  href="https://www.youtube.com/@Sontungmtp" target="_blank" class="youtube">Youtube</a>
+                    </ul>
+                </div>
+                <div class=" col-three">
+                    <h4 class="open">Opening hours</h4>
+                    <p><i class="ti-time"></i>Mon-Thu: 10am - 9pm</p>
+                    <p><i class="ti-time"></i>Fri-Sun: 10am - 11pm</p>
+                    <h4 class="contact">Contact </h4>
+                    <p><i class="ti-email"></i>anhdinhtq7204@gmail.com</p>
+                    <p><i class="ti-mobile"></i>0335979819</p>
+                </div>
+                <div class=" col-three">
+                    <div class="subscribe">
+                        <h3 class="mail">Subscribe to our newsletter for some sweet stuff </h3>
+                        <label for="email">Enter your email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <input class="submit" type="submit" value="Subscribe"> 
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

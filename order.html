@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="http://127.0.0.1:5500/donut-web/index.html#main">
+    <link rel="stylesheet" href="./assets/css/order.css">
+    <link rel="stylesheet" href="./assets/css/font/themify-icons-font/themify-icons/\/themify-icons.css">
+    <title>Order online</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+        }); 
+    </script>
+</head>
+<body>
+    <div id="status">
+    </div>
+    <div id="header"></div>
+        <div class="container">
+            <div id="donut-menu" class="donut-menu">
+                <h1 class="menu-heading">Online Ordering</h1>
+                <header>
+                    <!-- <h1 class="sub-heading">Ordering</h1> -->
+                </header>
+                <!-- <div class="list-flex"> -->
+                    <div class="donut-item js-donut-item" id="cartItems" data-key="1">
+                        <div class="list-body">
+                            <div class="cart-img1">
+                                <img src="./assets/css/img/m_donut_1.jpg" class="img js-img" id="cartImg"  alt="Chocolate Crunch">
+                            </div>
+                            <div class="cart-col2">
+                                <h3 class="list-heading" id="cartName">Chocolate Crunch</h3>
+                                <p class="list-des">These chocolate donuts is covered with bittersweet chocolate and topped with colorful nuggets.</p>
+
+                                <div class="price js-price" id="cartPrice">
+                                    <p> <p>$</p> <span>2.50</span> </p>
+                                </div>
+                            </div>
+                                <div class="menu-footer">
+                                </div>           
+                                <button class="add js-add">Add to cart</button>    
+                        </div>    
+                    </div>
+                    <div class="donut-item js-donut-item" id="cartItems" data-key="2">
+                        <div class="list-body">
+                            <div class="cart-img1">
+                                <img src="./assets/css/img/m_donut2.png" class="img js-img"alt="Cookies & Cream">
+                            </div>
+                            <div class="cart-col2">
+
+                                <h3 class="list-heading" id="cartName">Cookies & Cream</h3>
+                                <p class="list-des">These soft donuts have an ultra-thick sweet icing and a generous sprinkling of crushed Oreos.</p>
+                                <div class="price js-price" id="cartPrice">
+                                    <p> <p>$</p> <span>2.55</span> </p>
+                                </div>
+                            </div>
+                                <div class="menu-footer">           
+                                </div>           
+                                <button class="add js-add">Add to cart</button>          
+                        </div>    
+                    </div>
+                <!-- </div> -->
+                    <div class="donut-item js-donut-item" id="cartItems" data-key="3">
+                        <div class="list-body">
+                            <div class="cart-img1">
+                                <img src="./assets/css/img/m_donut3.jpg" class="img js-img" alt="Caramel Glaze">
+                            </div>
+                            <div class="cart-col2">
+
+                                <h3 class="list-heading" id="cartName">Caramel Glaze</h3>
+                                <p class="list-des">These donuts are spiced with turmeric, cardamom, and ginger and bathed in a decadent caramel sauce.</p>
+                                <div class="price js-price" id="cartPrice">
+                                    <p> <p>$</p> <span>2.60</span> </p>
+                                </div>
+                            </div>
+                                <div class="menu-footer">        
+                                </div>            
+                                <button class="add js-add">Add to cart</button>            
+                        </div>  
+                    </div>
+                    <div class="donut-item js-donut-item" id="cartItems" data-key="4">
+                        <div class="list-body">
+                            <div class="cart-img1">
+                                <img src="./assets/css/img/m_donut4.jpg" class="img js-img" alt="Strawberry Sprinkles">
+                            </div>
+                            <div class="cart-col2">
+                                <h3 class="list-heading" id="cartName">Strawberry Sprinkles</h3>
+                                    <p class="list-des">A large Yeast raised doughnut, covered in house-made strawberry icing, and colorful sprinkles.</p>
+                                    <div class="price js-price" id="cartPrice">
+                                        <p> <p>$</p> <span>2.50</span> </p>
+                                    </div>
+                            </div>
+                                <div class="menu-footer">         
+                                </div>
+                                <button class="add js-add">Add to cart</button>                            
+                             </div> 
+                        
+                    </div>
+                    <div class="donut-item js-donut-item" id="cartItems" data-key="5">
+                        <div class="list-body">
+                            <div class="cart-img1">
+                                <img src="./assets/css/img/donut5.jpg" class="img js-img" alt="White Sprinkles">
+                            </div>
+                            <div class="cart-col2">
+
+                                <h3 class="list-heading" id="cartName">White Sprinkles</h3>
+                                <p class="list-des">Traditional raised yeast donut, topped withn sweet vanilla icing cream and rainbow sprinkles.</p>
+                                <div class="price js-price" id="cartPrice">
+                                    <p> <p>$</p> <span>2.30</span></p>
+                                </div>
+                            </div>
+                                <div class="menu-footer">      
+                                </div>
+                                <button class="add js-add">Add to cart</button>   
+                            </div> 
+                    </div>
+                    <div class="donut-item js-donut-item" id="cartItems" data-key="6">
+                        <div class="list-body">
+                            <div class="cart-img1">
+                                <img src="./assets/css/img/donut6.jpg" class="img js-img" alt="Strawberry Frosty">
+                            </div>
+                            <div class="cart-col2">
+                                <h3 class="list-heading" id="cartName"> Strawberry Frosty</h3>
+                                <p class="list-des">These soft donuts feature fresh strawberries and a delicious fresh strawberry glaze frosting.</p>
+                                <div class="price js-price" id="cartPrice">
+                                    <p> <p>$</p> <span>2.50</span> </p>
+                                </div>
+                            </div>
+                                <div class="menu-footer">    
+                                </div>
+                                <button class="add js-add">Add to cart</button>    
+                        </div>  
+                    </div>
+                    <div class="donut-item js-donut-item" id="cartItems" data-key="7">
+                        <div class="list-body">
+                            <div class="cart-img1">
+                                <img src="./assets/css/img/donut7.jpg" class="img js-img" id="cartImg" alt="Caramel Lace">
+                            </div>
+                            <div class="cart-col2">
+                                <h3 class="list-heading" id="cartName"> Caramel Lace</h3>
+                                <p class="list-des">Donuts coated with vanilla icing, drizzled in caramel sauce & filled with a gooey caramel center.</p>
+                                <div class="price js-price" id="cartPrice">
+                                    <p> <p>$</p> <span>2.40</span> </p>
+                                </div>
+                            </div>
+                                <div class="menu-footer">        
+                                </div>
+                                <button class="add js-add">Add to cart</button>   
+                        </div> 
+                    </div>
+                    <div class="donut-item js-donut-item" id="cartItems" data-key="8">
+                        <div class="list-body">
+                            <div class="cart-img1">
+                                <img src="./assets/css/img/donut8.jpg" class="img js-img" id="cartImg" alt="Blue Sprinkles">
+                            </div>
+                            <div class="cart-col2">
+                                <h3 class="list-heading" id="cartName">Blue Sprinkles</h3>
+                                <p class="list-des">These sweet doughnuts are finished with blue icing cream and colorful pearl sugar sprinkles.</p>
+                                <div class="price js-price" id="cartPrice">
+                                    <p> <p>$</p> <span>2.50</span> </p>
+                                </div>
+                            </div>
+                                <div class="menu-footer">      
+                                </div>
+                                <button class="add js-add">Add to cart</button>       
+                        </div>  
+                    </div>
+            </div>
+ 
+            <div id="cart" class="cart">
+               <h1 class="cart-heading">Cart</h1>
+               <div class="listCart">
+                <form action="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Cancel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+         
+                        </tbody>
+                    </table>
+                    <div class="price-total">
+                        <p>Total: <p class="unit">$</p> <span>0</span></p>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+
+       
+
+   
+
+    <div id="footer"></div>
+    <script src="script.js"></script>
+</body>
+</html>

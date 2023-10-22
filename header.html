@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>header</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main{
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --white: #fff;
+    --black: #000;
+    --orange:#f5c9b2;
+    --blue:#5D478B;
+    --purple: #5D4783;
+    --brown:#765223;
+}
+#header {
+    height: 50px;
+    background-color: var(--orange);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+@font-face {
+    font-family: myfont;
+    src: url("./assets/css/font/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: font-heading;
+    src: url("./assets/css/font/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: font-section;
+    src: url("./assets/css/font/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: brandname;
+    src: url("./assets/css/font/ClickerScript-Regular.ttf");
+}
+/* Tablet */
+@media(min-width: 740px) and (max-width: 1024px){
+    
+    .main{
+        overflow: hidden;
+    }
+    .header{
+        max-width: 100%;
+        width: max-content;
+        overflow: hidden;
+    }
+    .logo {
+        margin-left: -100px;
+        width: 20px;
+    }
+    .home{
+        margin-left: 0;
+    }
+    .header .navbar{
+        display: none;
+    }
+    .order-btn .order-online{
+        display: none;
+    }
+    .header .ti-menu{
+        display: block;
+    }
+   
+    .text-content h2{
+        font-size: 110%;
+    }
+    .text-description h4{
+        font-size: 60%;
+        margin-top: -15px;
+    }
+    .container-swap{
+        max-width: 100%;
+    }
+    .section-heading{
+        font-size: 100%;
+    }
+    .content-section .about-text{
+        font-size: 100px;
+    }
+    /* div.about-text{
+        font-size: 200px;
+    } */
+    .content-section .intro{
+        padding-right: 40px;
+    }
+    .content-section .shop-img{
+        max-width: 100%;
+        max-height: fit-content;
+    }
+    .donut-item .list-heading{
+        font-size: 75%;
+        /* font-size: 10px; */
+    }
+   
+    .donut-item .buy-now{
+        max-width: 100%;
+    }
+    .col-three{
+        max-width: 100%;
+        padding: 0;
+        /* padding-right: 10px; */
+        /* margin-left: -100%; */
+    }
+    .footer-content{
+        max-width: 100%;
+        /* margin-left: -130px;
+        margin-top: -30px; */
+    }
+
+    .footer-section{
+        max-width: 100%;
+        /* margin-left: -180px; */
+    }
+    div.footer-section{
+        font-size: 13px;
+    }
+    .col-three .subscribe{
+        max-width: 100%;
+
+    }
+}
+/* Mobile */
+@media(max-width: 46.25em){
+    .mobile{
+        display: block;
+    }
+}
+#header {
+    background-color: var(--orange);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#header .home{
+    text-decoration: none;
+    font-family: brandname;
+    margin-left: 200px;
+    margin-right: auto;
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 50px;
+    padding: 0 25px;
+    letter-spacing: 1px;
+    color: #d1167a;
+    float: left;
+}
+.home:hover{
+    background-color: #f4d8d7;
+}
+#nav li {
+    display: flex;
+    text-align: center;   
+    align-items: center; 
+
+}
+.navbar{
+    /* margin-right: 30px; */
+    /* margin-left: 70px; */
+}
+.ti-menu{
+    margin-bottom: 75px;
+    font-size: 28px;
+    height: 5px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    color: var(--purple);
+    display: none; 
+}
+
+.order-btn .order-online{
+    /* width: 400px; */
+    align-items: center;
+}
+ .order-online{
+    /* margin-right: 170px; */
+    text-align: center;
+    color: var(--white);
+    background-color: var(--blue);
+    text-decoration: none;
+    font-family: font-section;
+    font-size: 18px;
+    padding: 9px 21px;
+    border-radius: 40px;
+    border: var(--blue);
+}
+.order-online:hover{
+    color: var(--blue);
+    border: var(--blue);
+    background-color: var(--light);
+    
+}
+#nav > li > a {
+    font-weight: 900;
+    font-size: 19px;
+}
+#nav li a {
+    color: var(--blue);
+    text-decoration: none;
+    line-height: 50px;
+    margin-left: 10px;
+    padding: 0 30px;
+    display: inline-block;
+    font-family: font-heading;
+    text-align: center;
+}
+
+#nav li:hover a {
+    background-color: #f4d8d7;
+
+}
+.nav-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+    /* animation: fadeIn linear 0.2s; */
+}
+.nav-tablet{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: var(--white);
+    transform: translateX(100%);
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+ ul{
+    list-style: none;
+}
+
+.nav-list{
+    margin-top: 100px;
+}
+.nav-tablet-link{
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--purple);
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+}
+.nav-tablet-link:hover{
+    background-color: var(--light);
+    
+}
+.nav-logo{
+    text-align: center;
+    max-width: 100%;
+}
+.nav-logo .nav-home{
+    text-decoration: none;
+    font-family: brandname;
+    max-width: 100%;
+    width: 100%;
+    /* margin-left: 100px; */
+    margin-top: 50px;
+
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 50px;
+    padding: 0 25px;
+    letter-spacing: 1px;
+    color: #d1167a;
+    float: left;
+}
+.nav-home:hover{
+    background-color: var(--light);
+}
+.order-online-tablet{
+    color: var(--white);
+    background-color: var(--blue);
+    text-decoration: none;
+    font-family: font-section;
+    font-size: 18px;
+    padding: 9px 20px;
+    margin-top: 50px;
+    border-radius: 40px;
+    border: var(--blue);
+}
+.order-online-tablet:hover{
+    background-color: var(--light);
+    color: var(--purple);
+}
+.order-btn-tablet{
+    margin-top: 40px;
+    text-align: center;
+}
+.nav-tablet-close{
+    width: 15px;
+    height: 15px;
+    font-size: 1.4rem;
+    color: var(--black);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    float: right;
+}
+.nav-input:checked ~ .nav-overlay {
+    display: block;
+}
+.nav-input:checked ~ .nav-tablet{
+    transform: translateX(0);
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+    </style>
+</head>
+<body>
+            <div id="header" class="header">
+            <div class="logo">
+                <a href="#" class="home">Sweetie</a>
+            </div>
+            <div class="navbar">
+            <ul id="nav"> 
+                <li><a href="#content">About</a></li>
+                <li><a href="./menu.html" target="_top">Menu</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+            </ul>   
+            </div>
+                <div class="order-btn">
+                    <a href="order.html" class="order-online">Order online</a>
+                </div>
+                <label for="nav-tablet-input" class="nav-bar-btn">
+                    <i class="ti-menu"></i>
+                </label>
+
+                
+                <input type="checkbox" hidden name="" class="nav-input" id="nav-tablet-input">
+                <label for="nav-tablet-input" class="nav-overlay"></label>
+
+                <div class="nav-tablet">
+                    <label for="nav-tablet-input" class="nav-tablet-close">
+                        <i class="ti-close"></i>
+                    </label>
+                    <div class="nav-logo">
+                        <a href="#" class="nav-home">Sweetie</a>
+                    </div>
+                    <div class="nav-list">
+                    <ul id="nav-tablet-list"> 
+                        <li><a href="#content" class="nav-tablet-link">About</a></li>
+                        <li><a href="./menu.html" class="nav-tablet-link" target="_top">Menu</a></li>
+                        <li><a href="./contact.html" class="nav-tablet-link">Contact us</a></li>
+                    </ul> 
+                </div>
+                    <div class="order-btn-tablet">
+                        <a href="order.html" class="order-online-tablet">Order online</a>
+                    </div>  
+                </div>
+        </div>
+    </div>
+</body>
+</html>
